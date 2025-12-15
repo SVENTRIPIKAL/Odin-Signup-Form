@@ -1,13 +1,21 @@
-body {
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    color: black;
+.container {
+    display: flex;
+    height: 100vh;
 }
 
-div {
-    display: flex;
-    justify-content: center;
+#left {
+    flex-direction: column;
+    background-color: red;
+    flex: 0.75;
+}
+
+#right {
+    flex-direction: column;
+    background-color: blue;
+    flex: 1
 }
