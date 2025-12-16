@@ -1,27 +1,52 @@
+/* remove margins & add box-sizing
+    for all elements */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+/* main page container with Horizontal display
+    via Display: Flex for Left & Right ids */
 .page-container {
     display: flex;
     height: 100vh;
 }
 
-#left {
-    flex-direction: column;
+/* make container Relative so
+    element positions can be applied.
+    Split display area with Flex */
+#left-container {
+    position: relative;
     background-color: red;
     flex: 0.75;
 }
 
-#left img {
+/* fill container with image */
+#left-container img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
-#right {
-    flex-direction: column;
+/* add banner with Absolute position centered
+    & center its children via Display: Flex */
+#left-container .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-size: large;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Split display area with Flex */
+#right-container {
     background-color: blue;
     flex: 1
 }
