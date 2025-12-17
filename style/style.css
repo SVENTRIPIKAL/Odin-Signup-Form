@@ -84,7 +84,7 @@
 
 /* attribution link default look */
 #left-container .attribution a:link {
-    color: blue;
+    color: gold;
     background-color: transparent;
     text-decoration: none;
 }
@@ -105,7 +105,7 @@
 
 /* attribution link active look */
 #left-container .attribution a:active {
-    color: yellow;
+    color: pink;
     background-color: transparent;
     text-decoration: underline;
 }
