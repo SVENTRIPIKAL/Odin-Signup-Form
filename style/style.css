@@ -13,12 +13,16 @@
     box-sizing: border-box;
 }
 
+
+
 /* main page container with Horizontal display
     via Display: Flex for Left & Right ids */
 #page-container {
     display: flex;
     height: 100vh;
 }
+
+
 
 /* make container Relative so
     element positions can be applied.
@@ -69,6 +73,7 @@
 #left-container .attribution {
     width: 100%;
     color: white;
+    font-family: "Norse", 'Courier New', Courier, monospace;
     text-align: center;
     /* bottom-center text */
     position: absolute;
@@ -76,6 +81,36 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* attribution link default look */
+#left-container .attribution a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* attribution link visited look */
+#left-container .attribution a:visited {
+    color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* attribution link hover look */
+#left-container .attribution a:hover {
+    color: greenyellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* attribution link active look */
+#left-container .attribution a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
 
 /* Split display area with Flex */
 #right-container {
