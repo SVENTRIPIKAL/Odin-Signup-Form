@@ -114,6 +114,26 @@
 
 /* Split display area with Flex */
 #right-container {
+    display: flex;
+    flex-direction: column;
     background-color: blue;
     flex: 1
+}
+
+#right-container .top {
+    height: 100%;
+    background-color: yellow;
+    flex: 1;
+}
+
+#right-container .middle {
+    height: 100%;
+    background-color: aquamarine;
+    flex: 0.80;
+}
+
+#right-container .bottom  {
+    height: 100%;
+    background-color: antiquewhite;
+    flex: 1;
 }
