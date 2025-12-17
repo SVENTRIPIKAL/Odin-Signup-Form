@@ -124,7 +124,30 @@
     height: 100%;
     background-color: yellow;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
+
+#right-container .top .text-1, 
+#right-container .top .text-2 {
+    margin-inline: 4%;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#right-container .top .text-1 {
+    width: 80%;
+    margin-block-end: 3%;
+}
+
+#right-container .top .text-2 {
+    margin-block-end: 5%;
+}
+
+
 
 #right-container .middle {
     height: 100%;
