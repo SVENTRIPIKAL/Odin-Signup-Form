@@ -177,9 +177,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* make form elements stack horizontally */
+/* make form elements stack as a 2x3 grid */
 #right-container .middle form {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(3, 50%);
+    grid-template-columns: repeat(2, 50%);
     width: 75%;
     align-items: flex-end;
 }
