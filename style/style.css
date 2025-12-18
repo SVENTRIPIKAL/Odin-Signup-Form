@@ -24,6 +24,7 @@
 
 
 
+/* LEFT SECTION */
 /* make container Relative so
     element positions can be applied.
     Split display area with Flex */
@@ -112,6 +113,7 @@
 
 
 
+/* RIGHT-TOP SECTION */
 /* Split display area with Flex */
 #right-container {
     display: flex;
@@ -153,14 +155,35 @@
 
 
 
+/* RIGHT-MIDDLE SECTION */
+/* size middle section */
 #right-container .middle {
     height: 100%;
     background-color: lawngreen;
     flex: 0.80;
 }
 
+/* add margins to middle text and form elements */
+#right-container .middle .text,
+#right-container .middle form {
+    margin-inline-start: 4%;
+    margin-block-start: 4%;
+}
+
+/* make form elements stack horizontally */
+#right-container .middle form {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* make each input container occupy the same space */
+#right-container .middle .input-container {
+    flex: 1;
+}
 
 
+
+/* RIGHT-BOTTOM SECTION */
 /* right bottom section of screen */
 #right-container .bottom  {
     height: 100%;
