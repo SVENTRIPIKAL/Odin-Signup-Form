@@ -120,6 +120,7 @@
     flex: 1
 }
 
+/* align children to bottom-left */
 #right-container .top {
     height: 100%;
     background-color: yellow;
@@ -130,6 +131,7 @@
     justify-content: flex-end;
 }
 
+/* text font style */
 #right-container .top .text-1, 
 #right-container .top .text-2 {
     margin-inline: 4%;
@@ -138,11 +140,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* text 1 size & margin */
 #right-container .top .text-1 {
     width: 80%;
     margin-block-end: 3%;
 }
 
+/* text 2 margin */
 #right-container .top .text-2 {
     margin-block-end: 5%;
 }
@@ -155,8 +159,60 @@
     flex: 0.80;
 }
 
+
+
+/* right bottom section of screen */
 #right-container .bottom  {
     height: 100%;
     background-color: antiquewhite;
     flex: 1;
+}
+
+/* button & text font & style */
+#right-container .bottom button,
+#right-container .bottom .text {
+    margin-inline-start: 4%;
+    margin-block-start: 3%;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* button attributes */
+#right-container .bottom button {
+    color: white;
+    font-weight: bolder;
+    width: 27%;
+    padding-block: 1.5%;
+    border-radius: 10px;
+    border: none;
+    background-color: #596D48;
+}
+
+/* main link look */
+#right-container .bottom a:link {
+    color: #596D48;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* link visited look */
+#right-container .bottom a:visited {
+    color: rebeccapurple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* link hover look */
+#right-container .bottom a:hover {
+    color:rosybrown;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* link active look */
+#right-container .bottom a:active {
+    color: crimson;
+    background-color: transparent;
+    text-decoration: underline;
 }
