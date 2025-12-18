@@ -29,7 +29,7 @@
     Split display area with Flex */
 #left-container {
     position: relative;
-    background-color: red;
+    /*background-color: red;*/
     flex: 0.75;
 }
 
@@ -116,14 +116,14 @@
 #right-container {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    /*background-color: blue;*/
     flex: 1
 }
 
 /* align children to bottom-left */
 #right-container .top {
     height: 100%;
-    background-color: yellow;
+    background-color: #f8f8f7;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@
 
 #right-container .middle {
     height: 100%;
-    background-color: aquamarine;
+    background-color: lawngreen;
     flex: 0.80;
 }
 
@@ -164,7 +164,7 @@
 /* right bottom section of screen */
 #right-container .bottom  {
     height: 100%;
-    background-color: antiquewhite;
+    background-color: #f8f8f7;
     flex: 1;
 }
 
@@ -182,8 +182,8 @@
 #right-container .bottom button {
     color: white;
     font-weight: bolder;
-    width: 27%;
-    padding-block: 1.5%;
+    width: 255px;
+    padding-block: 15px;
     border-radius: 10px;
     border: none;
     background-color: #596D48;
