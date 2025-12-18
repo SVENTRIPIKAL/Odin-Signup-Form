@@ -170,15 +170,35 @@
     margin-block-start: 4%;
 }
 
+/* middle text font style */
+#right-container .middle .text {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* make form elements stack horizontally */
 #right-container .middle form {
     display: flex;
+    width: 75%;
     align-items: flex-end;
 }
 
 /* make each input container occupy the same space */
 #right-container .middle .input-container {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+}
+
+/* label font style */
+#right-container .middle label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* length of input bars */
+#right-container .middle input {
+    width: 80%;
 }
 
 
