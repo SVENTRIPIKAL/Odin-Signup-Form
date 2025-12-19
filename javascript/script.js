@@ -2,6 +2,15 @@
 const invalidText = "Invalid Format.\nExample:";
 const phoneRegex = new RegExp(/(\d{10}|\d{3}-\d{3}-\d{4})/);
 const emailRegex = new RegExp(/[^\s\n@]+@[a-zA-Z]+\.(com|net|org|edu|gov)/);
+const passwordRegex = new RegExp(/(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}/)
+const passwordText = `
+Password Must Contain:
+-1 Digit
+-1 Uppercase Letter
+-1 Lowercase Letter
+-1 Special Character
+-8 Or More Characters
+`
 
 // assign element variables by ID
 var email = document.getElementById("email");
@@ -31,17 +40,22 @@ function validatePhoneNumber() {
 
 // checks if passwords match & sets validity text
 function validatePassword() {
-    if (password.value == confirm_password.value) {
-        confirm_password.setCustomValidity("");
-    } else {
+    if (!passwordRegex.test(password.value)) {
+        password.setCustomValidity(`${passwordText}`)
+        
+    } else if (password.value != confirm_password.value) {
+        password.setCustomValidity("")
         confirm_password.setCustomValidity("Passwords Do Not Match.");
+        
+    } else {
+        confirm_password.setCustomValidity("");
     }
 }
 
 
 
-// validates fields on every key release or input change
+// validates each field on every key release
 email.onkeyup = validateEmail;
 phoneNumber.onkeyup = validatePhoneNumber;
-password.onchange = validatePassword;
+password.onkeyup = validatePassword;
 confirm_password.onkeyup = validatePassword;
