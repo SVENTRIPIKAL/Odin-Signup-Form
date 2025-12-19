@@ -160,14 +160,14 @@
 #right-container .middle {
     height: 100%;
     background-color: lawngreen;
-    flex: 0.80;
+    flex: 0.90;
 }
 
 /* add margins to middle text and form elements */
 #right-container .middle .text,
 #right-container .middle form {
     margin-inline-start: 4%;
-    margin-block-start: 2%;
+    margin-block: 3%;
 }
 
 /* middle text font style */
@@ -180,7 +180,7 @@
 /* make form elements stack as a 2x3 grid */
 #right-container .middle form {
     display: grid;
-    grid-template-rows: repeat(3, 50%);
+    grid-template-rows: repeat(3, 25%);
     grid-template-columns: repeat(2, 50%);
     row-gap: 25%;
     width: 75%;
