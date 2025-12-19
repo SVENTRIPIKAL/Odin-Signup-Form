@@ -41,7 +41,7 @@
                 <!-- middle section -->
                 <div class="middle">
                     <div class="text">Let's do this!</div>
-                    <form action="https://httpbin.org/post" method="post">
+                    <form id="form" action="https://httpbin.org/post" method="post">
                         <!-- first name -->
                         <div class="input-container">
                             <label for="first-name">FIRST NAME</label>
@@ -76,7 +76,7 @@
                 </div>
                 <!-- bottom section button & text -->
                 <div class="bottom">
-                    <button>Create Account</button>
+                    <button type="submit" form="form">Create Account</button>
                     <div class="text">
                         Already have an account? 
                         <a href="link-to-nowhere">Log in</a>
