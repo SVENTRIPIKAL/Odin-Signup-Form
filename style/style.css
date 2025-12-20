@@ -25,62 +25,71 @@
 
 
 /* LEFT SECTION */
-/* make container Relative so
-    element positions can be applied.
-    Split display area with Flex */
+/* split display area with Flex & add background image to div */
 #left-container {
-    position: relative;
-    /*background-color: red;*/
     flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/controller-photo.jpg");
 }
 
-/* fill container with image */
-#left-container img {
+/* split left container into Top & Bottom section */
+#left-container .top {
+    flex: 1;
+}
+
+/* split left container into Top & Bottom section */
+#left-container .bottom {
+    flex: .73;
+}
+
+/* add flex, size & align children */
+#left-container .top,
+#left-container .bottom {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    display: flex;
+    align-items: flex-end;
 }
 
-/* add banner with Absolute position centered
-    & center its children via Display: Flex */
-#left-container .banner {
+/* add banner to top left-container */
+#left-container .top .banner {
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);   /* add color opacity */
-    width: 100%;
-    height: 15%;
-    /* center banner */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 
-/* size container for banner icon */
+/* size container for icon mage */
 #left-container .banner .icon-container {
-    width: 9vh;
+    width: 75px;
+    height: 100px;
 }
 
-/* add custom font & sizing to banner text */
+/* stretch image to fill container */
+#left-container .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/*add custom font & sizing to banner text*/
 #left-container .banner .text {
     color: white;
+    font-size: 75px;
     font-family: "Norse", 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 9vh;
 }
 
 /* position & align attribution text */
 #left-container .attribution {
     width: 100%;
     color: white;
-    font-family: "Norse", 'Courier New', Courier, monospace;
+    font-size: 18px;
     text-align: center;
-    /* bottom-center text */
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
+    font-family: "Norse", 'Courier New', Courier, monospace;
 }
 
 /* attribution link default look */
@@ -118,7 +127,6 @@
 #right-container {
     display: flex;
     flex-direction: column;
-    /*background-color: blue;*/
     flex: 1
 }
 
