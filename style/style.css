@@ -137,6 +137,7 @@
 #right-container .top .text-1, 
 #right-container .top .text-2 {
     margin-inline: 4%;
+    color: #1D2523;
     font-size: x-large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -159,13 +160,16 @@
 /* size middle section */
 #right-container .middle {
     height: 100%;
-    background-color: lawngreen;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.2);
     flex: 0.90;
 }
 
 /* add margins to middle text and form elements */
 #right-container .middle .text,
 #right-container .middle form {
+    color: #1D2523;
     margin-inline-start: 4%;
     margin-block: 3%;
 }
@@ -218,7 +222,7 @@
 #right-container .bottom button,
 #right-container .bottom .text {
     margin-inline-start: 4%;
-    margin-block-start: 3%;
+    margin-block-start: 5%;
     font-size: large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -232,12 +236,16 @@
     padding-block: 15px;
     border-radius: 10px;
     border: none;
-    background-color: #596D48;
+    background-color: #1690A9;
+}
+
+#right-container .bottom .text {
+    color: #1D2523;
 }
 
 /* main link look */
 #right-container .bottom a:link {
-    color: #596D48;
+    color: #1690A9;
     background-color: transparent;
     text-decoration: none;
 }
@@ -258,7 +266,7 @@
 
 /* link active look */
 #right-container .bottom a:active {
-    color: crimson;
+    color: #A0AC9E;
     background-color: transparent;
     text-decoration: underline;
 }
