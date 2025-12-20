@@ -1,6 +1,6 @@
 // create & assign constants
 const invalidText = "Invalid Format.\nExample:";
-const phoneRegex = new RegExp(/(\d{10}|\d{3}-\d{3}-\d{4})/);
+const phoneRegex = new RegExp(/\d{10}|(\d{3}-){2}\d{4}/);
 const emailRegex = new RegExp(/[^\s\n@]+@[a-zA-Z]+\.(com|net|org|edu|gov)/);
 const passwordRegex = new RegExp(/(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}/)
 const passwordText = `
