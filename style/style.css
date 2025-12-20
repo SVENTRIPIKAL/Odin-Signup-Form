@@ -162,7 +162,7 @@
     height: 100%;
     position: relative;
     background-color: white;
-    box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.5);
     flex: 0.90;
 }
 
@@ -237,6 +237,7 @@
     border-radius: 10px;
     border: none;
     background-color: #1690A9;
+    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.3);
 }
 
 #right-container .bottom .text {
