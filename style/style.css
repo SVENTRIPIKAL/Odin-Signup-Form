@@ -269,7 +269,18 @@
     border-radius: 10px;
     border: none;
     background-color: #1690A9;
-    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* button color on hover */
+#right-container .bottom button:hover {
+    background-color: #137d92;
+}
+
+/* button style on click */
+#right-container .bottom button:active {
+    padding-block: 13px;
+    border: 2px solid #1D2523;
+    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* text color */
