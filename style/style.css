@@ -283,7 +283,6 @@
 
 /* link hover look */
 #right-container .bottom a:hover {
-    /*color:rosybrown;*/
     color: #a91690;
     background-color: transparent;
     text-decoration: underline;
@@ -291,7 +290,6 @@
 
 /* link active look */
 #right-container .bottom a:active {
-    /*color: #A0AC9E;*/
     color: #16a979;
     background-color: transparent;
     text-decoration: underline;
