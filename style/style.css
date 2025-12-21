@@ -171,14 +171,14 @@
     position: relative;
     background-color: white;
     box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.5);
-    flex: 0.90;
+    flex: 0.95;
 }
 
 /* add margins to middle text and form elements */
 #right-container .middle .text,
 #right-container .middle form {
     color: #1D2523;
-    margin-inline-start: 4%;
+    margin-inline: 4%;
     margin-block: 3%;
 }
 
@@ -195,7 +195,7 @@
     grid-template-rows: repeat(3, 25%);
     grid-template-columns: repeat(2, 50%);
     row-gap: 25%;
-    width: 75%;
+    width: 76%;
     align-items: flex-end;
 }
 
@@ -215,6 +215,8 @@
 #right-container .middle input {
     width: 80%;
     border-radius: 4px;
+    font-size: 14px;
+    padding-inline: 2%;
 }
 
 /* style input bars on hover & focus */
