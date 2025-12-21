@@ -244,8 +244,7 @@
 /* button & text font & style */
 #right-container .bottom button,
 #right-container .bottom .text {
-    margin-inline-start: 4%;
-    margin-block-start: 5%;
+    margin-inline: 4%;
     font-size: large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -253,6 +252,7 @@
 
 /* button attributes */
 #right-container .bottom button {
+    margin-block: 5%;
     color: white;
     font-weight: bolder;
     width: 255px;
