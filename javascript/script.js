@@ -48,6 +48,7 @@ function validatePassword() {
         confirm_password.setCustomValidity("Passwords Do Not Match.");
         
     } else {
+        password.setCustomValidity("")
         confirm_password.setCustomValidity("");
     }
 }

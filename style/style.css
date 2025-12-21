@@ -211,26 +211,35 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* length of input bars */
+/* length & size of input elements */
 #right-container .middle input {
     width: 80%;
-    border-radius: 4px;
     font-size: 14px;
+    border-radius: 4px;
     padding-inline: 2%;
 }
 
-/* style input bars on hover & focus */
-#right-container .middle input:hover,
-#right-container .middle input:focus {
+/* input hover color */
+#right-container .middle input:hover {
     border: 2px solid #1690A9;
-    border-radius: 4px;
-    outline: none;
 }
 
-/* style input bar on focus */
+/* input focus style */
 #right-container .middle input:focus {
+    outline: none;
     box-shadow: 2px 8px 15px 0px rgba(0, 0, 0, 0.15);
 }
+
+/* input valid color */
+#right-container .middle input:focus:valid {
+    border: 2px solid #16a92f;
+}
+
+/* input invalid color */
+#right-container .middle input:focus:invalid {
+    border: 2px solid #a33721;
+}
+
 
 
 /* RIGHT-BOTTOM SECTION */
