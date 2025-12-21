@@ -101,7 +101,7 @@
 
 /* attribution link visited look */
 #left-container .attribution a:visited {
-    color: rebeccapurple;
+    color: greenyellow;
     background-color: transparent;
     text-decoration: none;
 }
@@ -285,7 +285,7 @@
 
 /* link visited look */
 #right-container .bottom a:visited {
-    color: rebeccapurple;
+    color: #16a979;
     background-color: transparent;
     text-decoration: none;
 }
