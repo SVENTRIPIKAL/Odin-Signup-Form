@@ -88,7 +88,7 @@
     color: white;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     font-family: "Norse", 'Courier New', Courier, monospace;
 }
 
@@ -108,14 +108,14 @@
 
 /* attribution link hover look */
 #left-container .attribution a:hover {
-    color: greenyellow;
+    color: pink;
     background-color: transparent;
     text-decoration: underline;
 }
 
 /* attribution link active look */
 #left-container .attribution a:active {
-    color: pink;
+    color: greenyellow;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -283,14 +283,16 @@
 
 /* link hover look */
 #right-container .bottom a:hover {
-    color:rosybrown;
+    /*color:rosybrown;*/
+    color: #a91690;
     background-color: transparent;
     text-decoration: underline;
 }
 
 /* link active look */
 #right-container .bottom a:active {
-    color: #A0AC9E;
+    /*color: #A0AC9E;*/
+    color: #16a979;
     background-color: transparent;
     text-decoration: underline;
 }
